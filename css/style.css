@@ -1,0 +1,52 @@
+@font-face {
+  font-family: neou;
+  src: url(../neou/Neou-Bold.otf);
+}
+
+div {
+  font-family: neou;
+}
+
+body,
+html {
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background: #202020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 20%;
+  width: 60%;
+  margin-top: 15%;
+}
+
+.text {
+  color: white;
+  margin: 20px;
+  font-size: 32px;
+  font-family: neou;
+}
+
+ul {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  padding: 0%;
+  margin: 20px;
+}
+
+li {
+  margin: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
