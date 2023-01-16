@@ -7,56 +7,67 @@ div {
   font-family: corbert-wide;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body,
 html {
   text-align: center;
-  margin: 0 auto;
   height: 100%;
   width: 100%;
-  background: #eff0f4;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .logo {
-  height: 25%;
-  max-width: 300px;
-  margin-top: 8%;
+  width: 300px;
+  margin-top: 8vh;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-top: 3vh;
+    max-width: 220px;
+  }
 }
 
 .footnote {
   color: #000;
-  font-size: 1.05rem;
+  font-size: 12px;
+  letter-spacing: 4px;
   font-family: corbert-wide;
   text-transform: uppercase;
 }
 
 .text {
   color: #000;
-  margin: 20px;
-  font-size: 32px;
+  font-size: 20px;
+  margin-top: 20px;
   font-family: corbert-wide;
   text-transform: uppercase;
 }
 
 ul {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   list-style: none;
-  padding: 0%;
-  margin: 20px;
-}
-
-li {
-  height: 80%;
-  margin: 15px;
-  transition: all 0.2s ease-in-out;
+  padding: 0 40px;
 }
 
 img {
   fill: #000;
+}
+
+li {
+  margin: 15px;
+  transition: all 0.2s ease-in-out;
 }
 
 li:hover {
